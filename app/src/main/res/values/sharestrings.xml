@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--各平台所需AppId等-->
+    <string name="tencent">yours</string>
+    <!--<string name="QQ_APP_ID">yours</string>
+    <string name="QQ_AppSecret">yours</string>-->
+    <string name="QQ_APP_ID">yours</string>
+    <string name="QQ_AppSecret">yours</string>
+
+    <!--<string name="WX_APP_ID">yours</string>
+    <string name="WX_APPSecret">yours</string>-->
+    <string name="WX_APP_ID">yours</string>
+    <string name="WX_APPSecret">yours</string>
+</resources>
