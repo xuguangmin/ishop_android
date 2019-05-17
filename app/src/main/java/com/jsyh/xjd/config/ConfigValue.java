@@ -22,13 +22,13 @@ public class ConfigValue {
 
 
     //请求服务器地址（主页）太郎屋
-    public static final String MAIN_URL = "http://139.196.169.165/mobile/";
-    public static final String FOUND_URL = "http://139.196.169.165/mobile/stores.php";//店铺街
+    public static final String MAIN_URL = "http://192.168.199.227/mobile/";
+    public static final String FOUND_URL = "http://192.168.199.227/mobile/stores.php";//店铺街
     //请求服务器地址(接口)
-    public static final String APP_IP = "http://192.168.1.134/tailangwu/index.php/";
+    public static final String APP_IP = "http://192.168.199.227/tailangwu/index.php/";
     //图片请求地址
-    public static final String IMG_IP = "http://139.196.169.165";
-    public static final String DESCRIPTOR = "http://139.196.169.165/mapp";
+    public static final String IMG_IP = "http://192.168.199.227";
+    public static final String DESCRIPTOR = "http://192.168.199.227/mapp";
 
     /*请求服务器地址（主页）小京东*/
     /*public static final String MAIN_URL = "http://demo2.ishopv.com/mapp/";
