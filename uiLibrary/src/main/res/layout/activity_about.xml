@@ -13,7 +13,7 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginTop="65dp"
-        android:src="@mipmap/tlw_icon"/>
+        android:src="@mipmap/app_icon"/>
 
     <TextView
         android:layout_width="match_parent"

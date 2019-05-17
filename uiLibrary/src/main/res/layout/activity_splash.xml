@@ -6,6 +6,6 @@
     <ImageView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:background="@mipmap/tlw_loading"/>
+        android:background="@mipmap/app_loading"/>
 
 </LinearLayout>
