@@ -5,12 +5,13 @@ android {
         /*config {
             storeFile file('E:/eclipse/workspace/amm_sdk_sample/debug.keystore')
         }*/
+        /*
         debug {
             storeFile file("E:/ASProjects/SVNProjects/xiaojd/xiaojd/keystore")
             storePassword "123456"
             keyAlias "ydd"
             keyPassword "123456"
-        }
+        }*/
     }
     compileSdkVersion 23
     buildToolsVersion '23.0.2'

@@ -1,0 +1,5 @@
+libraries/RoundImageView_Library/build/
+libraries/SlideDetailsLayoutLibrary/build/
+libraries/library_infiniteIndicator/build/
+.gradle/
+.idea/caches/
