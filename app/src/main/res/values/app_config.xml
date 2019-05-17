@@ -6,7 +6,7 @@
 
 
     <!--app的名字--><!--在AndroidManifest中-->
-    <string name="app_name">太郎屋</string>
+    <string name="app_name">优材</string>
 
 
     <!--是否有顶部导航栏-->
