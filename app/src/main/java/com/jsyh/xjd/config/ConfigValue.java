@@ -22,10 +22,12 @@ public class ConfigValue {
 
 
     //请求服务器地址（主页）太郎屋
-    public static final String MAIN_URL = "http://192.168.199.227/mobile/";
+    //public static final String MAIN_URL = "http://192.168.199.227/mobile/";
+    public static final String MAIN_URL = "http://192.168.199.227/mobile/index.php";
+
     public static final String FOUND_URL = "http://192.168.199.227/mobile/stores.php";//店铺街
     //请求服务器地址(接口)
-    public static final String APP_IP = "http://192.168.199.227/tailangwu/index.php/";
+    public static final String APP_IP = "http://192.168.199.227/mobile/index.php/";
     //图片请求地址
     public static final String IMG_IP = "http://192.168.199.227";
     public static final String DESCRIPTOR = "http://192.168.199.227/mapp";
@@ -68,7 +70,9 @@ public class ConfigValue {
     public static final String NOCOLLECT_GOODS = APP_IP + "goods/qcollect";
 
     //购物车列表
+    //public static final String CartGoodsList = APP_IP + "goods/cartlist";
     public static final String CartGoodsList = APP_IP + "goods/cartlist";
+
     //修改商品数量
     public static final String AlterGoodsNumber = APP_IP + "goods/charnum";
     //购物车中删除商品
@@ -80,7 +84,7 @@ public class ConfigValue {
     /**
      * 分类
      */
-    public static final String CATEGORY = APP_IP + "first/classify";
+    public static final String CATEGORY = APP_IP + "json/category.php";
 
 
     /**

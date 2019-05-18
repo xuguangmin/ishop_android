@@ -1,12 +1,12 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.2"
+    compileSdkVersion 26
+    buildToolsVersion "28.0.3"
 
     defaultConfig {
-        minSdkVersion 14
-        targetSdkVersion 23
+        minSdkVersion 16
+        targetSdkVersion 26
         versionCode 1
         versionName "1.0"
     }
@@ -19,23 +19,25 @@ android {
 }
 
 dependencies {
-    //compile fileTree(dir: 'libs', include: ['*.jar'])
-    //3/compile 'com.android.support:appcompat-v7:23.0.0'
-    compile 'com.android.support:cardview-v7:23.2.0'
-    compile 'com.android.support:gridlayout-v7:23.2.0'
-    compile 'com.android.support:recyclerview-v7:23.2.0'
-    compile 'com.android.support:design:23.2.0'
-    //4/compile 'com.nineoldandroids:library:2.4.0'
-    compile project(':libraries:PullRefreshLayoutlibrary')
-    compile project(':libraries:flowlayout-lib')
-    //7/compile project(':libraries:librarys')
-    compile project(':libraries:library_infiniteIndicator')
-    compile project(':libraries:RoundImageView_Library')
-    compile project(':libraries:umeng_social_library')
-    compile project(':libraries:SlideDetailsLayoutLibrary')
+    //implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:26.0.0'
+    implementation 'com.android.support:cardview-v7:26.+'
+    implementation 'com.android.support:gridlayout-v7:26.+'
+    implementation 'com.android.support:recyclerview-v7:26.+'
+    implementation 'com.android.support:design:26.+'
+    //implementation 'com.nineoldandroids:library:2.4.0'
+    implementation project(':libraries:PullRefreshLayoutlibrary')
+    implementation project(':libraries:flowlayout-lib')
+    //implementation project(':libraries:librarys')
+    implementation project(':libraries:library_infiniteIndicator')
+    implementation project(':libraries:RoundImageView_Library')
+    implementation project(':libraries:umeng_social_library')
+    implementation project(':libraries:SlideDetailsLayoutLibrary')
     //BGAViewpager轮播图
-    compile 'com.nineoldandroids:library:2.4.0'
-    compile 'cn.bingoogolapple:bga-banner:2.0.3@aar'
+    implementation 'com.nineoldandroids:library:2.4.0'
+    implementation 'cn.bingoogolapple:bga-banner:2.0.3@aar'
     //上滑加载更多
-    compile 'com.github.yasevich:endless-recycler-view:1.1.0'
+    implementation 'com.github.yasevich:endless-recycler-view:1.1.0'
+    implementation group: 'com.squareup.picasso', name: 'picasso', version: '2.5.2'
+    implementation group: 'com.sina', name: 'ToastUtil', version: '1.0.0'
 }

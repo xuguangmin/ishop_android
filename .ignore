@@ -1,5 +1,10 @@
 libraries/RoundImageView_Library/build/
 libraries/SlideDetailsLayoutLibrary/build/
 libraries/library_infiniteIndicator/build/
-.gradle/
-.idea/caches/
+.gradle
+.idea/caches
+.gitignore
+.idea/ishop_android.iml
+.idea/modules.xml
+.idea/workspace.xml
+
