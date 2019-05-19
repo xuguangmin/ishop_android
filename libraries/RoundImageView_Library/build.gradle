@@ -5,7 +5,7 @@ android {
     buildToolsVersion "28.0.3"
 
     defaultConfig {
-        minSdkVersion 16
+        minSdkVersion 14
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
@@ -20,7 +20,7 @@ android {
 
 dependencies {
     //compile fileTree(include: ['*.jar'], dir: 'libs')
-    implementation 'com.android.support:appcompat-v7:26.0.0'
+    api 'com.android.support:appcompat-v7:26.+'
     //compile project(':libraries:librarys')
-    implementation 'com.squareup.picasso:picasso:2.5.2'
+    api 'com.squareup.picasso:picasso:2.5.2'
 }

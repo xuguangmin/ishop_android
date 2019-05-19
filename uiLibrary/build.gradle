@@ -1,11 +1,37 @@
 apply plugin: 'com.android.library'
 
+buildscript {
+    repositories {
+        mavenCentral()
+        google()
+        jcenter()
+        maven { url 'https://dl.bintray.com/umsdk/release' }
+    }
+}
+
+allprojects {
+    repositories {
+        /*
+        tasks.withType(JavaCompile) {
+            options.compilerArgs << "-Xlint:unchecked" << "-Xlint:deprecation"
+        }*/
+        google()
+        jcenter()
+        mavenCentral()
+        maven { url 'https://dl.bintray.com/umsdk/release' }
+    }
+}
+
+
+
+
 android {
     compileSdkVersion 26
     buildToolsVersion "28.0.3"
 
+
     defaultConfig {
-        minSdkVersion 16
+        minSdkVersion 14
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
@@ -19,25 +45,24 @@ android {
 }
 
 dependencies {
-    //implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'com.android.support:appcompat-v7:26.0.0'
-    implementation 'com.android.support:cardview-v7:26.+'
-    implementation 'com.android.support:gridlayout-v7:26.+'
-    implementation 'com.android.support:recyclerview-v7:26.+'
-    implementation 'com.android.support:design:26.+'
-    //implementation 'com.nineoldandroids:library:2.4.0'
-    implementation project(':libraries:PullRefreshLayoutlibrary')
-    implementation project(':libraries:flowlayout-lib')
-    //implementation project(':libraries:librarys')
-    implementation project(':libraries:library_infiniteIndicator')
-    implementation project(':libraries:RoundImageView_Library')
-    implementation project(':libraries:umeng_social_library')
-    implementation project(':libraries:SlideDetailsLayoutLibrary')
+    //api fileTree(dir: 'libs', include: ['*.jar'])
+    api 'com.android.support:appcompat-v7:26.1.0'
+    api 'com.android.support:cardview-v7:26.1.0'
+    api 'com.android.support:gridlayout-v7:26.1.0'
+    api 'com.android.support:recyclerview-v7:26.1.0'
+    api 'com.android.support:design:26.1.0'
+    //api 'com.nineoldandroids:library:2.4.0'
+    api project(':libraries:PullRefreshLayoutlibrary')
+    api project(':libraries:flowlayout-lib')
+    api project(':libraries:librarys')
+    api project(':libraries:library_infiniteIndicator')
+    api project(':libraries:RoundImageView_Library')
+    api project(':libraries:umeng_social_library')
+    api project(':libraries:SlideDetailsLayoutLibrary')
     //BGAViewpager轮播图
-    implementation 'com.nineoldandroids:library:2.4.0'
-    implementation 'cn.bingoogolapple:bga-banner:2.0.3@aar'
+    api 'com.nineoldandroids:library:2.4.0'
+    api 'cn.bingoogolapple:bga-banner:2.0.3@aar'
     //上滑加载更多
-    implementation 'com.github.yasevich:endless-recycler-view:1.1.0'
-    implementation group: 'com.squareup.picasso', name: 'picasso', version: '2.5.2'
-    implementation group: 'com.sina', name: 'ToastUtil', version: '1.0.0'
+    api 'com.github.yasevich:endless-recycler-view:1.1.0'
+    api group: 'com.squareup.picasso', name: 'picasso', version: '2.5.2'
 }

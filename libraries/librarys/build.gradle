@@ -5,7 +5,7 @@ android {
     buildToolsVersion "28.0.3"
 
     defaultConfig {
-        minSdkVersion 16
+        minSdkVersion 14
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
@@ -31,16 +31,16 @@ android {
 }
 
 dependencies {
-    implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation 'com.android.support:appcompat-v7:26.0.0'
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    api 'com.android.support:appcompat-v7:26.+'
     //    compile files('libs/universal-image-loader-1.9.4.jar')
     //6/compile files('libs/picasso-2.5.2.jar')
-    //compile files('libs/okhttp-2.4.0.jar')
+    api files('libs/okhttp-2.4.0.jar')
     //compile files('libs/okio-1.4.0.jar')
-    implementation 'com.orhanobut:logger:1.11'
+    api 'com.orhanobut:logger:1.11'
     //compile files('libs/core-3.0.0.jar')
     //compile files('libs/alipaySDK-20151014.jar')
     /*compile files('libs/libammsdk.jar')*/
-    implementation 'de.greenrobot:eventbus:3.0.0-beta1'
-    implementation 'com.squareup.picasso:picasso:2.5.2'
+    api 'de.greenrobot:eventbus:3.0.0-beta1'
+    api 'com.squareup.picasso:picasso:2.5.2'
 }

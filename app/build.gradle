@@ -14,7 +14,8 @@ android {
         }*/
     }
     compileSdkVersion 26
-    buildToolsVersion '28.0.3'
+    buildToolsVersion "28.0.3"
+
     defaultConfig {
         applicationId project.ANDROID_BUILD_APPLICATIONID_DEBUG
         minSdkVersion Integer.parseInt(project.ANDROID_BUILD_MIN_SDK_VERSION)
@@ -22,13 +23,11 @@ android {
         versionCode Integer.parseInt(project.VERSION_CODE)
         versionName project.VERSION_NAME
         // Enabling multidex support.
-        /*multiDexEnabled true*/
-        manifestPlaceholders = [package             : project.ANDROID_BUILD_APPLICATIONID_DEBUG,
+        multiDexEnabled true
+        manifestPlaceholders = [package :ANDROID_BUILD_APPLICATIONID_DEBUG,
                                 /*UMENG_APPKEY: project.UMENG_APPKEY,*/
                                 UMENG_MESSAGE_SECRET: project.UMENG_MESSAGE_SECRET,
                                 UMENG_CHANNEL       : project.UMENG_CHANNEL]
-
-        multiDexEnabled true
     }
     buildTypes {
         release {
@@ -36,16 +35,28 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+}
 
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+    }
 }
 
 dependencies {
-    //compile fileTree(include: ['*.jar'], dir: 'libs')
-    //2/compile 'com.android.support:appcompat-v7:23.0.0'
-    implementation project(':uiLibrary')
-    //1/compile project(':umeng_social_library')
-    implementation 'com.android.support:appcompat-v7:26.0.0'
-    implementation 'com.android.support:support-v4:26.0.0'
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    api project(':uiLibrary')
+    //api project(':umeng_social_library')
+    api project(':libraries:umeng_social_library')
+    api project(':libraries:librarys')
+    api 'com.android.support:appcompat-v7:26.1.0'
+    api 'com.android.support:support-v4:26.+'
     debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.4-beta2'
     releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.4-beta2'
+    api project(':libraries:umeng_social_library')
+    api 'com.github.orhanobut:logger:1.12'
+    api 'de.greenrobot:eventbus:2.4.0'
 }
