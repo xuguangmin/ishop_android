@@ -100,6 +100,7 @@ public abstract class BaseQuickAdapter<T, H extends BaseAdapterHelper> extends R
         return vh;
     }
 
+    @SuppressWarnings(value={"unchecked"})
     @Override
     public void onBindViewHolder(BaseAdapterHelper helper, int position) {
         helper.itemView.setTag(position);

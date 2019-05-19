@@ -239,6 +239,7 @@ public class Utils {
             return false;
     }
 
+    @SuppressWarnings(value={"deprecation"})
     public static long getSDFreeSize() {
         // 取得SD卡文件路径
         File path = Environment.getExternalStorageDirectory();
@@ -249,6 +250,7 @@ public class Utils {
         long freeBlocks = sf.getAvailableBlocks();
         return (freeBlocks * blockSize) / 1024 / 1024; // 单位MB
     }
+    @SuppressWarnings(value={"deprecation"})
     public static long getSDAllSize(){
         //取得SD卡文件路径
         File path = Environment.getExternalStorageDirectory();

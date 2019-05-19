@@ -46,6 +46,7 @@ public class BannerView extends RelativeLayout {
         initView(context);
     }
 
+    @SuppressWarnings(value={"deprecation"})
     public void setDrawerMode(int drawerMode) {
         switch (drawerMode) {
             case STYLE_Circular:
@@ -89,6 +90,7 @@ public class BannerView extends RelativeLayout {
         this.imageView.setLayoutParams(layoutParams);
     }
 
+    @SuppressWarnings(value={"deprecation"})
     private void initView(Context context) {
         // TODO Auto-generated method stub
         View baseView = View.inflate(context, R.layout.adv_view, this);

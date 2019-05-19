@@ -142,6 +142,7 @@ public class FloatingActionButton extends ImageButton {
         setBackgroundCompat(drawable);
     }
 
+    @SuppressWarnings(value={"deprecation"})
     private Drawable createDrawable(int color) {
         OvalShape ovalShape = new OvalShape();
         ShapeDrawable shapeDrawable = new ShapeDrawable(ovalShape);
@@ -162,6 +163,7 @@ public class FloatingActionButton extends ImageButton {
         return context.obtainStyledAttributes(attributeSet, attr, 0, 0);
     }
 
+    @SuppressWarnings(value={"deprecation"})
     private int getColor(@ColorRes int id) {
         return getResources().getColor(id);
     }

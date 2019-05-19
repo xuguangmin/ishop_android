@@ -133,6 +133,7 @@ public class CircleIndicator extends LinearLayout implements
 				: mIndicatorUnselectedBackgroundResId;
 	}
 
+        @SuppressWarnings(value={"deprecation"})
 	public void setViewPager(ViewPager viewPager) {
 		mViewpager = viewPager;
 		mCurrentPosition = mViewpager.getCurrentItem();

@@ -422,6 +422,7 @@ public class GoodsFilterTabView extends FrameLayout implements View.OnClickListe
      * @param v
      * @param checked
      */
+    @SuppressWarnings(value={"deprecation"})
     public void setTextViewCheck(TextView v, boolean checked) {
         if (checked) {
 
@@ -437,6 +438,7 @@ public class GoodsFilterTabView extends FrameLayout implements View.OnClickListe
      * 生成ColorStateList
      * @return
      */
+    @SuppressWarnings(value={"deprecation"})
     public ColorStateList generatorColorState() {
         int[][] states = new int[][]{
                 new int[]{android.R.attr.state_pressed},

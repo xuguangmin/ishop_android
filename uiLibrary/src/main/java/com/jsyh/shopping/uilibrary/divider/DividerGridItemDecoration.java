@@ -129,6 +129,7 @@ public class DividerGridItemDecoration extends RecyclerView.ItemDecoration {
         return false;
     }
 
+    @SuppressWarnings(value={"deprecation"})
     @Override
     public void getItemOffsets(Rect outRect, int itemPosition, RecyclerView parent) {
 

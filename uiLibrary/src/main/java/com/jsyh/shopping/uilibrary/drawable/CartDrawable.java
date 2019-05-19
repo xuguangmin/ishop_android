@@ -27,6 +27,7 @@ public class CartDrawable extends Drawable implements Animatable {
     private boolean isRunning;
     private int mLevel = 10;
 
+    @SuppressWarnings(value={"deprecation"})
     public CartDrawable(Context context, int flag, int imgId) {
         if (flag == 0)
             icon_cart = context.getResources().getDrawable(R.mipmap.home_cart);

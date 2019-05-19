@@ -28,6 +28,7 @@ public abstract class BackgoudDimPopuwindow extends PopupWindow {
     private LinearLayout mDimLayout;
 
 
+    @SuppressWarnings(value={"deprecation"})
     public BackgoudDimPopuwindow(Context context) {
         super(context);
 
@@ -82,6 +83,7 @@ public abstract class BackgoudDimPopuwindow extends PopupWindow {
      * 生成dim布局
      * @param context
      */
+    @SuppressWarnings(value={"deprecation"})
     private void generalDimLayout(Context context) {
         mDimLayout = new LinearLayout(context);
         ViewGroup.LayoutParams dimParams =

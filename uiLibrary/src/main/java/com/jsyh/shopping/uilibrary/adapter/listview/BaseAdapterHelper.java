@@ -183,6 +183,7 @@ public class BaseAdapterHelper {
      * @param textColorRes The text color resource id.
      * @return The BaseAdapterHelper for chaining.
      */
+    @SuppressWarnings(value={"deprecation"})
     public BaseAdapterHelper setTextColorRes(int viewId, int textColorRes) {
         TextView view = retrieveView(viewId);
         view.setTextColor(context.getResources().getColor(textColorRes));
@@ -469,6 +470,7 @@ public class BaseAdapterHelper {
      * @param adapter The adapter;
      * @return The BaseAdapterHelper for chaining.
      */
+    @SuppressWarnings(value={"unchecked"})
     public BaseAdapterHelper setAdapter(int viewId, Adapter adapter) {
         AdapterView view = retrieveView(viewId);
         view.setAdapter(adapter);

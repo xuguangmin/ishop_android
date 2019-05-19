@@ -165,6 +165,7 @@ public class RecyclerViewHeader extends RelativeLayout {
         });
 
         RecyclerViewHeader.this.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+            @SuppressWarnings(value={"deprecation"})
             @Override
             public void onGlobalLayout() {
                 int height = RecyclerViewHeader.this.getHeight();

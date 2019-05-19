@@ -43,6 +43,7 @@ public class MyDialog extends Dialog {
         super(context, cancelable, cancelListener);
     }
 
+    @SuppressWarnings(value={"deprecation"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

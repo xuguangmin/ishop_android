@@ -48,6 +48,7 @@ public class ClearEditText extends EditText {
         init(context, attrs);
     }
 
+    @SuppressWarnings(value={"deprecation"})
     private void init(Context context, AttributeSet attrs) {
         // 获取自定义属性
         TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.ClearEditText);
@@ -83,6 +84,7 @@ public class ClearEditText extends EditText {
         });
     }
 
+    @SuppressWarnings(value={"deprecation"})
     @Override
     public boolean onTouchEvent(MotionEvent event) {
 
@@ -126,6 +128,7 @@ public class ClearEditText extends EditText {
      *
      * @param resId 图标资源id
      */
+    @SuppressWarnings(value={"deprecation"})
     public void setIconClear(@DrawableRes int resId) {
         drawableClear = getResources().getDrawable(resId);
         updateIconClear();

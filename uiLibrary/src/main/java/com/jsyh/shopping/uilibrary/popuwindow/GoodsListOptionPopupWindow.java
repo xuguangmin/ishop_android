@@ -118,6 +118,7 @@ public class GoodsListOptionPopupWindow extends PopupWindow implements CompoundB
         // ToastUtil.showToast(mContext, is_fare + "//////////////////" + is_promotion + "////////////////////" + p_delivery);
     }
 
+    @SuppressWarnings(value={"deprecation"})
     @Override
     public void onClick(View v) {
         int i = v.getId();

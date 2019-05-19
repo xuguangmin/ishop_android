@@ -125,6 +125,7 @@ public class BaseAdapterHelper extends RecyclerView.ViewHolder {
      * @param textColorRes The text color resource id.
      * @return The BaseAdapterHelper for chaining.
      */
+    @SuppressWarnings(value={"deprecation"})
     public BaseAdapterHelper setTextColorRes(int viewId, int textColorRes) {
         TextView view = retrieveView(viewId);
         view.setTextColor(view.getResources().getColor(textColorRes));
@@ -372,6 +373,7 @@ public class BaseAdapterHelper extends RecyclerView.ViewHolder {
      * @param adapter The adapter;
      * @return The BaseAdapterHelper for chaining.
      */
+    @SuppressWarnings(value={"unchecked"})
     public BaseAdapterHelper setAdapter(int viewId, Adapter adapter) {
         AdapterView view = retrieveView(viewId);
         view.setAdapter(adapter);

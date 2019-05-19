@@ -64,6 +64,7 @@ public class RecycleBin {
    *
    * @param scrap The view to add
    */
+  @SuppressWarnings("unchecked")
   void addScrapView(View scrap, int position, int viewType) {
     if (viewTypeCount == 1) {
       currentScrapViews.put(position, scrap);
@@ -77,6 +78,7 @@ public class RecycleBin {
   }
 
   /** Move all views remaining in activeViews to scrapViews. */
+  @SuppressWarnings("unchecked")
   void scrapActiveViews() {
     final View[] activeViews = this.activeViews;
     final int[] activeViewTypes = this.activeViewTypes;
@@ -128,7 +130,7 @@ public class RecycleBin {
       }
     }
   }
-
+  @SuppressWarnings("unchecked")
   static View retrieveFromScrap(SparseArray<View> scrapViews, int position) {
     int size = scrapViews.size();
     if (size > 0) {
