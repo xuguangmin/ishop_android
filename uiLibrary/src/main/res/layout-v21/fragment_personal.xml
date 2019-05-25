@@ -72,7 +72,7 @@
                         android:orientation="horizontal"
                         android:visibility="gone">
 
-                        <com.jsyh.shopping.uilibrary.views.CircleImageView
+                        <com.yocai.shopping.uilibrary.views.CircleImageView
                             android:id="@+id/mCircleImageViewPhoto"
                             android:layout_width="62dp"
                             android:layout_height="62dp"

@@ -131,7 +131,7 @@
                         android:text="购买数量"
                         android:textSize="15sp" />
 
-                    <com.jsyh.shopping.uilibrary.views.AddAndSubView
+                    <com.yocai.shopping.uilibrary.views.AddAndSubView
                         android:id="@+id/goodsNum"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />

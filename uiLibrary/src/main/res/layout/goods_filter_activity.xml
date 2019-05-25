@@ -5,7 +5,7 @@
     android:fitsSystemWindows="true"
     android:orientation="vertical">
 
-    <com.jsyh.shopping.uilibrary.drawerlayout.DrawerLayoutFixup
+    <com.yocai.shopping.uilibrary.drawerlayout.DrawerLayoutFixup
         android:id="@+id/mainDrawerLayout"
         android:layout_width="match_parent"
 
@@ -19,7 +19,7 @@
 
 
         <!--main drawer layout-->
-        <com.jsyh.shopping.uilibrary.drawerlayout.DrawerLayoutFixup
+        <com.yocai.shopping.uilibrary.drawerlayout.DrawerLayoutFixup
             android:id="@+id/filterDrawerLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -42,10 +42,10 @@
                 android:layout_gravity="end" />
 
 
-        </com.jsyh.shopping.uilibrary.drawerlayout.DrawerLayoutFixup>
+        </com.yocai.shopping.uilibrary.drawerlayout.DrawerLayoutFixup>
 
 
-    </com.jsyh.shopping.uilibrary.drawerlayout.DrawerLayoutFixup>
+    </com.yocai.shopping.uilibrary.drawerlayout.DrawerLayoutFixup>
 
 
 </LinearLayout>

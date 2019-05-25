@@ -144,7 +144,7 @@
                             android:id="@+id/imgHead"
                             android:layout_width="85dp"
                             android:layout_height="85dp" />-->
-                        <com.jsyh.shopping.uilibrary.views.CircleImageView
+                        <com.yocai.shopping.uilibrary.views.CircleImageView
                             android:id="@+id/imgHead"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -327,13 +327,13 @@
                 </LinearLayout>
             </RelativeLayout>
 
-            <com.jsyh.shopping.uilibrary.GridViewFixScroll
+            <com.yocai.shopping.uilibrary.GridViewFixScroll
                 android:id="@+id/gridview"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="1dp"
                 android:horizontalSpacing="1dp"
-                android:numColumns="4"></com.jsyh.shopping.uilibrary.GridViewFixScroll>
+                android:numColumns="4"></com.yocai.shopping.uilibrary.GridViewFixScroll>
 
             <RelativeLayout
                 android:id="@+id/rlCart"

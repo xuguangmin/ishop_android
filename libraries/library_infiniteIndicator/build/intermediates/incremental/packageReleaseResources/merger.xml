@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/home/gm/webapp/ishop_android_test/libraries/library_infiniteIndicator/src/main/res"/><source path="/home/gm/webapp/ishop_android_test/libraries/library_infiniteIndicator/build/generated/res/rs/release"/><source path="/home/gm/webapp/ishop_android_test/libraries/library_infiniteIndicator/build/generated/res/resValues/release"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main" generated-set="main$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/home/gm/webapp/ishop_android_test/libraries/library_infiniteIndicator/src/main/res"><file path="/home/gm/webapp/ishop_android_test/libraries/library_infiniteIndicator/src/main/res/values/style.xml" qualifiers=""><style name="Center">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style><style name="CenterBottom">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style><style name="BottomRight">paddingRight paddingRight
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:padding">10dp</item>
+    </style><style name="BottomLeft">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+    </style><style name="CenterTop">paddingTop
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style><style name="CenterTopRight">paddingTop paddingRight
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style><style name="CenterTopLeft">paddingLeft paddingTop
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+    </style><style name="AnimLineIndicator">
+        <item name="ci_width">10dp</item>
+        <item name="ci_height">4dp</item>
+        <item name="ci_margin">6dp</item>
+        <item name="ci_animator">@animator/translation_and_rotate</item>
+        <item name="ci_drawable">@drawable/balck_radius_square</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">center</item>
+    </style></file><file path="/home/gm/webapp/ishop_android_test/libraries/library_infiniteIndicator/src/main/res/values/vpi__defaults.xml" qualifiers=""><bool name="default_circle_indicator_centered">true</bool><color name="default_circle_indicator_fill_color">#FF5000</color><color name="default_circle_indicator_page_color">#7fffffff</color><integer name="default_circle_indicator_orientation">0</integer><dimen name="default_circle_indicator_radius">3dp</dimen><bool name="default_circle_indicator_snap">false</bool><color name="default_circle_indicator_stroke_color">#FFDDDDDD</color><dimen name="default_circle_indicator_stroke_width">0dp</dimen></file><file path="/home/gm/webapp/ishop_android_test/libraries/library_infiniteIndicator/src/main/res/values/dimens.xml" qualifiers=""><dimen name="activity_horizontal_margin">16dp</dimen><dimen name="activity_vertical_margin">16dp</dimen><dimen name="page_margin">10dp</dimen><dimen name="anim_circle_indicator_height">30dp</dimen></file><file path="/home/gm/webapp/ishop_android_test/libraries/library_infiniteIndicator/src/main/res/values/attrs.xml" qualifiers=""><declare-styleable name="ViewPagerIndicator">
+        
+        <attr format="reference" name="vpiCirclePageIndicatorStyle"/>
+    </declare-styleable><attr format="boolean" name="centered"/><attr format="color" name="selectedColor"/><attr format="dimension" name="strokeWidth"/><attr format="color" name="unselectedColor"/><declare-styleable name="CirclePageIndicator">
+        
+        <attr name="centered"/>
+        
+        <attr format="color" name="fillColor"/>
+        
+        <attr format="color" name="pageColor"/>
+        
+        <attr name="android:orientation"/>
+        
+        <attr format="dimension" name="radius"/>
+        
+        <attr format="color" name="strokeColor"/>
+        
+        <attr name="strokeWidth"/>
+        
+        <attr name="android:background"/>
+    </declare-styleable><declare-styleable name="AnimIndicator">
+        <attr format="dimension" name="ci_width"/>
+        <attr format="dimension" name="ci_height"/>
+        <attr format="dimension" name="ci_margin"/>
+        <attr format="reference" name="ci_animator"/>
+        <attr format="reference" name="ci_drawable"/>
+    </declare-styleable><declare-styleable name="InfiniteIndicatorLayout">
+     <attr format="enum" name="indicator_type">
+         <enum name="indicator_default" value="0"/>
+         <enum name="indicator_anim_circle" value="1"/>
+         <enum name="indicator_anim_line" value="2"/>
+     </attr>
+ </declare-styleable></file><file path="/home/gm/webapp/ishop_android_test/libraries/library_infiniteIndicator/src/main/res/values/strings.xml" qualifiers=""><string name="app_name">InfiniteIndicator</string></file><file path="/home/gm/webapp/ishop_android_test/libraries/library_infiniteIndicator/src/main/res/values/colors.xml" qualifiers=""><color name="red">#FF0000</color><color name="blue">#3366CC</color></file><file name="scale_with_alpha" path="/home/gm/webapp/ishop_android_test/libraries/library_infiniteIndicator/src/main/res/animator/scale_with_alpha.xml" qualifiers="" type="animator"/><file name="translation_and_rotate" path="/home/gm/webapp/ishop_android_test/libraries/library_infiniteIndicator/src/main/res/animator/translation_and_rotate.xml" qualifiers="" type="animator"/><file name="layout_default_indicator" path="/home/gm/webapp/ishop_android_test/libraries/library_infiniteIndicator/src/main/res/layout/layout_default_indicator.xml" qualifiers="" type="layout"/><file name="item_page" path="/home/gm/webapp/ishop_android_test/libraries/library_infiniteIndicator/src/main/res/layout/item_page.xml" qualifiers="" type="layout"/><file name="render_type_default" path="/home/gm/webapp/ishop_android_test/libraries/library_infiniteIndicator/src/main/res/layout/render_type_default.xml" qualifiers="" type="layout"/><file name="layout_anim_line_indicator" path="/home/gm/webapp/ishop_android_test/libraries/library_infiniteIndicator/src/main/res/layout/layout_anim_line_indicator.xml" qualifiers="" type="layout"/><file name="layout_anim_circle_indicator" path="/home/gm/webapp/ishop_android_test/libraries/library_infiniteIndicator/src/main/res/layout/layout_anim_circle_indicator.xml" qualifiers="" type="layout"/><file name="balck_radius_square" path="/home/gm/webapp/ishop_android_test/libraries/library_infiniteIndicator/src/main/res/drawable/balck_radius_square.xml" qualifiers="" type="drawable"/><file name="white_radius" path="/home/gm/webapp/ishop_android_test/libraries/library_infiniteIndicator/src/main/res/drawable/white_radius.xml" qualifiers="" type="drawable"/></source><source path="/home/gm/webapp/ishop_android_test/libraries/library_infiniteIndicator/build/generated/res/rs/release"/><source path="/home/gm/webapp/ishop_android_test/libraries/library_infiniteIndicator/build/generated/res/resValues/release"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="release$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/home/gm/webapp/ishop_android_test/libraries/library_infiniteIndicator/src/release/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="release" generated-set="release$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/home/gm/webapp/ishop_android_test/libraries/library_infiniteIndicator/src/release/res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="AnimIndicator">
+        <attr format="dimension" name="ci_width"/>
+        <attr format="dimension" name="ci_height"/>
+        <attr format="dimension" name="ci_margin"/>
+        <attr format="reference" name="ci_animator"/>
+        <attr format="reference" name="ci_drawable"/>
+    </declare-styleable><declare-styleable name="InfiniteIndicatorLayout">
+     <attr format="enum" name="indicator_type">
+         <enum name="indicator_default" value="0"/>
+         <enum name="indicator_anim_circle" value="1"/>
+         <enum name="indicator_anim_line" value="2"/>
+     </attr>
+ </declare-styleable><declare-styleable name="ViewPagerIndicator">
+        
+        <attr format="reference" name="vpiCirclePageIndicatorStyle"/>
+    </declare-styleable><declare-styleable name="CirclePageIndicator">
+        
+        <attr name="centered"/>
+        
+        <attr format="color" name="fillColor"/>
+        
+        <attr format="color" name="pageColor"/>
+        
+        <attr name="android:orientation"/>
+        
+        <attr format="dimension" name="radius"/>
+        
+        <attr format="color" name="strokeColor"/>
+        
+        <attr name="strokeWidth"/>
+        
+        <attr name="android:background"/>
+    </declare-styleable></configuration></mergedItems></merger>

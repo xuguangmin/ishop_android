@@ -6,6 +6,6 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
 
-    <string name="host">http://192.168.1.225/shopapi/</string>
+    <string name="host">http://192.168.199.227/shopapi/</string>
 
 </resources>

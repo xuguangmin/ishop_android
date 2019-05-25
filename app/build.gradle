@@ -57,7 +57,6 @@ dependencies {
     debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.4-beta2'
     releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.4-beta2'
     api project(':libraries:umeng_social_library')
-    //api 'com.github.orhanobut:logger:1.12'
     api 'com.orhanobut:logger:1.15'
     api 'de.greenrobot:eventbus:2.4.0'
 }

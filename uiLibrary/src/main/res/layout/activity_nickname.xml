@@ -8,7 +8,7 @@
     <include layout="@layout/title_bar"/>
 
 
-    <com.jsyh.shopping.uilibrary.ClearEditText
+    <com.yocai.shopping.uilibrary.ClearEditText
         android:id="@+id/txtNickname"
         android:layout_width="match_parent"
         android:layout_height="46dp"

@@ -94,7 +94,7 @@
                         android:textColor="#ff5000"
                         android:textSize="15sp"/>
 
-                    <com.jsyh.shopping.uilibrary.views.ShopCartAddAndSubView
+                    <com.yocai.shopping.uilibrary.views.ShopCartAddAndSubView
                         android:id="@+id/mShopCartAddSubView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>

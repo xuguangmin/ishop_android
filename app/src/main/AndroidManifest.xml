@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"  package="com.jsyh.xjd">
-    <!--  -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"  package="com.yocai.mobileAPP">
+    <!-- jsyh -->
 
     <!--访问网络权限 -->
     <uses-permission android:name="android.permission.CALL_PHONE"/>
@@ -35,6 +35,7 @@
     <uses-permission android:name="android.permission.GET_TASKS"/>
     -->
     <uses-permission android:name="android.permission.CALL_PHONE"/>
+
     <!-- alipay -->
     <supports-screens
         android:anyDensity="true"
@@ -44,13 +45,13 @@
         android:smallScreens="true"/>
 
     <application
-        android:name="com.jsyh.xjd.ShopApplication"
-        android:allowBackup="false"
+        android:name="com.yocai.mobileAPP.ShopApplication"
+        android:allowBackup="true"
         android:icon="@mipmap/app_icon"
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.jsyh.xjd.activity.SplashActivity"
+            android:name="com.yocai.mobileAPP.activity.SplashActivity"
             android:configChanges="orientation|screenSize"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
@@ -62,146 +63,146 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.jsyh.xjd.activity.me.LoginActivity"
+            android:name="com.yocai.mobileAPP.activity.me.LoginActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.jsyh.xjd.activity.me.NewPasswordActivity"
+            android:name="com.yocai.mobileAPP.activity.me.NewPasswordActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.jsyh.xjd.activity.me.FinishRegisterActivity"
+            android:name="com.yocai.mobileAPP.activity.me.FinishRegisterActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.jsyh.xjd.activity.MainActivity"
+            android:name="com.yocai.mobileAPP.activity.MainActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".activity.WebActivity"
+            android:name="com.yocai.mobileAPP.activity.WebActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.jsyh.xjd.activity.me.ReturnActivity"
+            android:name="com.yocai.mobileAPP.activity.me.ReturnActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.jsyh.xjd.activity.me.WriteExpressSnActivity"
+            android:name="com.yocai.mobileAPP.activity.me.WriteExpressSnActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.jsyh.xjd.activity.Guide"
+            android:name="com.yocai.mobileAPP.activity.Guide"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.jsyh.xjd.activity.SearchActivity"
+            android:name="com.yocai.mobileAPP.activity.SearchActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.jsyh.xjd.activity.me.ChooseBounsActivity"
+            android:name="com.yocai.mobileAPP.activity.me.ChooseBounsActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.jsyh.xjd.activity.me.MeAccountActivity"
+            android:name="com.yocai.mobileAPP.activity.me.MeAccountActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.jsyh.xjd.activity.me.SetupActicity"
+            android:name="com.yocai.mobileAPP.activity.me.SetupActicity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.jsyh.xjd.activity.me.ApplyServiceActivity"
+            android:name="com.yocai.mobileAPP.activity.me.ApplyServiceActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.jsyh.xjd.activity.me.CommentActivity"
+            android:name="com.yocai.mobileAPP.activity.me.CommentActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.jsyh.xjd.activity.me.MyBalanceActivity"
+            android:name="com.yocai.mobileAPP.activity.me.MyBalanceActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.jsyh.xjd.activity.me.MyCreditsActivity"
+            android:name="com.yocai.mobileAPP.activity.me.MyCreditsActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.jsyh.xjd.activity.me.MyShareActivity"
+            android:name="com.yocai.mobileAPP.activity.me.MyShareActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.jsyh.xjd.activity.me.RegisterActivity"
+            android:name="com.yocai.mobileAPP.activity.me.RegisterActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.jsyh.xjd.activity.me.ForgetActivity"
+            android:name="com.yocai.mobileAPP.activity.me.ForgetActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.jsyh.xjd.activity.me.ChangePasswordActivity"
+            android:name="com.yocai.mobileAPP.activity.me.ChangePasswordActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.jsyh.xjd.activity.me.NicknameActivity"
+            android:name="com.yocai.mobileAPP.activity.me.NicknameActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.jsyh.xjd.activity.me.MessageActivity"
+            android:name="com.yocai.mobileAPP.activity.me.MessageActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.jsyh.xjd.activity.me.FeedbackActivity"
+            android:name="com.yocai.mobileAPP.activity.me.FeedbackActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.jsyh.xjd.activity.me.AddressListActivity"
+            android:name="com.yocai.mobileAPP.activity.me.AddressListActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.jsyh.xjd.activity.me.NewAddressActivity"
+            android:name="com.yocai.mobileAPP.activity.me.NewAddressActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.jsyh.xjd.activity.me.MeBounsActivity"
+            android:name="com.yocai.mobileAPP.activity.me.MeBounsActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.jsyh.xjd.activity.me.MyOrderActivity"
+            android:name="com.yocai.mobileAPP.activity.me.MyOrderActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.jsyh.xjd.activity.me.LookOrderActivity"
+            android:name="com.yocai.mobileAPP.activity.me.LookOrderActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.jsyh.xjd.activity.me.CreateOrderActivity"
+            android:name="com.yocai.mobileAPP.activity.me.CreateOrderActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|stateUnchanged"/>
         <activity
-            android:name="com.jsyh.xjd.activity.me.SelectAreaActivity"
+            android:name="com.yocai.mobileAPP.activity.me.SelectAreaActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.jsyh.xjd.activity.me.AboutActivity"
+            android:name="com.yocai.mobileAPP.activity.me.AboutActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.jsyh.xjd.activity.me.PayActivity"
+            android:name="com.yocai.mobileAPP.activity.me.PayActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.jsyh.xjd.activity.me.RechargeActivity"
+            android:name="com.yocai.mobileAPP.activity.me.RechargeActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.jsyh.xjd.activity.ShopsListActivity"
+            android:name="com.yocai.mobileAPP.activity.ShopsListActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.jsyh.xjd.activity.GoodsListActivity"
+            android:name="com.yocai.mobileAPP.activity.GoodsListActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.jsyh.xjd.activity.ShoppingCartActivity"
+            android:name="com.yocai.mobileAPP.activity.ShoppingCartActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.jsyh.xjd.activity.GoodsCollectActivity"
+            android:name="com.yocai.mobileAPP.activity.GoodsCollectActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.jsyh.xjd.activity.ShopsCollectActivity"
+            android:name="com.yocai.mobileAPP.activity.ShopsCollectActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.jsyh.xjd.activity.me.CommentsListActivity"
+            android:name="com.yocai.mobileAPP.activity.me.CommentsListActivity"
             android:screenOrientation="portrait"/>
         <!-- 隐藏键盘 --><!-- 全屏 -->
         <activity
-            android:name="com.jsyh.xjd.qrzxing.CaptureActivity"
+            android:name="com.yocai.mobileAPP.qrzxing.CaptureActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
             android:windowSoftInputMode="stateAlwaysHidden"/>
         <activity
-            android:name="com.jsyh.xjd.activity.GoodsInfoActivity"
+            android:name="com.yocai.mobileAPP.activity.GoodsInfoActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".activity.GoodsInfoExchangeActivity"
+            android:name="com.yocai.mobileAPP.activity.GoodsInfoExchangeActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".activity.me.CreateExchangeOrderActivity"
+            android:name="com.yocai.mobileAPP.activity.me.CreateExchangeOrderActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.jsyh.xjd.activity.GoodsCommentsActivity"
+            android:name="com.yocai.mobileAPP.activity.GoodsCommentsActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.jsyh.xjd.activity.ShopActivity"
+            android:name="com.yocai.mobileAPP.activity.ShopActivity"
             android:screenOrientation="portrait"/>
         <!--重复了
         <activity
@@ -244,7 +245,7 @@
             android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
         <!-- 微信回调activity -->
         <activity
-            android:name="com.jsyh.xjd.wxapi.WXPayEntryActivity"
+            android:name="com.yocai.mobileAPP.wxapi.WXPayEntryActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:exported="true"
             android:screenOrientation="portrait"
@@ -374,7 +375,7 @@
 
         <!-- 使用完全自定义消息来开启应用的服务进程的示例服务配置 -->
         <!-- 不是必需的服务，可以根据开发者的需求进行设置 -->
-        <service android:name="com.jsyh.xjd.service.NotificationService"/>
+        <service android:name="com.yocai.mobileAPP.service.NotificationService"/>
 
         <meta-data
             android:name="UMENG_MESSAGE_SECRET"
